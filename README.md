@@ -1,1 +1,5 @@
+---
+permalink: /dist/
+---
+
 # portfolio
