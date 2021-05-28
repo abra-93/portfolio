@@ -584,7 +584,7 @@ body {
     max-width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: 4;
+    z-index: 5;
   }
 
   .hero__content--left {
@@ -605,5 +605,9 @@ body {
     display: flex;
     position: -webkit-sticky;
     position: sticky;
+  }
+
+  .content__title::after {
+    left: -15px;
   }
 }

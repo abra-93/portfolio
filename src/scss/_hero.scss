@@ -40,7 +40,7 @@
       max-width: 100%;
       position: fixed;
       bottom: 0;
-      z-index: 4;
+      z-index: 5;
     }
   }
   // .hero__content-wrap
@@ -380,6 +380,10 @@
         rgba(197, 202, 213, 0.15) 0,
         #ffffff00 70%
       );
+
+      @include _600 {
+        left: -15px;
+      }
     }
   }
 }
