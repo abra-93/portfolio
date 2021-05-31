@@ -139,7 +139,6 @@ body {
           flex: 1 1 auto;
   min-width: 400px;
   height: 100%;
-  padding: 20px 0;
   position: relative;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -446,7 +445,6 @@ body {
 .about__progress-bar {
   width: 75%;
   height: 20px;
-  border: 1px solid #dce2ec54;
   border-radius: 5px;
   overflow: hidden;
   position: relative;

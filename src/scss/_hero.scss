@@ -98,7 +98,6 @@
     flex: 1 1 auto;
     min-width: 400px;
     height: 100%;
-    padding: 20px 0;
     position: relative;
     transition: 0.4s;
     overflow: hidden;
@@ -444,7 +443,7 @@
   &__progress-bar {
     width: 75%;
     height: 20px;
-    border: 1px solid #dce2ec54;
+    // border: 1px solid #dce2ec54;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
