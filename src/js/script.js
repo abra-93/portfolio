@@ -3,7 +3,9 @@
 window.addEventListener("load", function () {
   const links = document.querySelectorAll(".js-menu"),
     block = document.querySelectorAll(".js-content"),
-    line = document.querySelectorAll(".js-progress-line");
+    line = document.querySelectorAll(".js-progress-line"),
+    tabs = document.querySelectorAll(".js-tabs"),
+    works = document.querySelectorAll(".js-work");
 
   // Navigation and transition to ro blocks
   links.forEach((link) => {
@@ -44,4 +46,34 @@ window.addEventListener("load", function () {
     });
   }
   setTimeout(progressLine(line), 2000);
+
+  // Tabs works
+
+  document.querySelector(".js-nav").addEventListener("click", function (event) {
+    // if (event.target.tagName !== "LI") return false;
+    let filterClass = event.target.dataset["f"];
+
+    works.forEach((elem) => {
+      elem.classList.remove("hide");
+      if (!elem.classList.contains(filterClass) && filterClass !== "all") {
+        console.log(filterClass);
+        elem.classList.add("hide");
+      }
+    });
+  });
+
+  const anchors = document.querySelectorAll('a[href^="#"');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const blockID = anchor.getAttribute("href");
+
+      document.querySelector(blockID).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }
 });

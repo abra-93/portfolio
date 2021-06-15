@@ -38,7 +38,7 @@
           >
         </li>
         <li class="menu__item">
-          <a href="#work" class="menu__link js-menu"
+          <a href="#works" class="menu__link js-menu"
             ><span class="fa fa-briefcase"></span>Work</a
           >
         </li>
@@ -126,6 +126,12 @@
             <div class="content__title">
               <h3>Resume</h3>
             </div>
+            <div class="resume__cv">
+              <div class="resume__cv-header">
+                <span class="resume__cv-title">Junior Frontend Developer </span>
+                <span class="resume__cv-price">800 $</span>
+              </div>
+            </div>
             <div class="resume__personal">
               <div class="resume__personal-title">Personal information</div>
               <div class="resume__personal-name">
@@ -133,7 +139,7 @@
                 <div class="resume__personal-gender"><i>gender:</i><span>Men</span></div>
                 <div class="resume__personal-age"><i>age:</i><span>28</span></div>
                 <div class="resume__personal-place"><i>place of residence: </i><span> Moscow</span></div>
-                <div class="resume__personal-description"><i>description:  </i><span>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, enim tempore maxime dolores iste quas at eos omnis nulla voluptates. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores reiciendis nam, ipsa exercitationem ad porro amet iusto mollitia maxime dicta.</span></div>
+                <div class="resume__personal-description"><i>description: </i><span>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, enim tempore maxime dolores iste quas at eos omnis nulla voluptates. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores reiciendis nam, ipsa exercitationem ad porro amet iusto mollitia maxime dicta.</span></div>
 
               </div>
               <div class="resume__personal-contact">
@@ -142,25 +148,104 @@
                 <p class="resume__personal-mail">aksivam@bk.ru</p>
               </div>
             </div>
-            <div class="resume__vc">
-              <div class="resume__vc-header">
-                <span class="resume__vc-title">Junior Frontend Developer </span>
-                <span class="resume__vc-price">40 000 руб.</span>
-              </div>
-            </div>
+            
           </section>
         </div>
-        <div id="work" class="content__inner js-content ">
-          <section class="content__block work">
-            <div class="content__title">
+        <div id="works" class=" content__inner js-content ">
+          <section class="content__block works">
+            <div class="content__title works__flex">
               <h3>Мои работы</h3>
+              <div class="works__menu filter-menu">
+                <ul class="filter-menu__wrap js-nav">
+                  <li class="filter-menu__btn" data-f="all">All</li>
+                  <li class="filter-menu__btn" data-f="web" >Web</li>
+                  <li class="filter-menu__btn" data-f="design">Design</li>
+                  <li class="filter-menu__btn" data-f="frontend">Frontend</li>
+                  <li class="filter-menu__btn" data-f="backend">Backend</li>
+                </ul> 
+              </div>
+            </div>
+            <div class="works__inner">
+              <div class="works__content-col">
+                <div class="works__col web js-work">
+                  <a href="www.google.com"  class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <div class="work__col-title">Web</div>
+                </div>
+                <div class="works__col web js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                <div class="work__col-title">Web</div></div>
+                <div class="works__col design js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                <div class="work__col-title">Design</div>
+              </div>
+                <div class="works__col design js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                <div class="work__col-title">Design</div>
+              </div>
+                <div class="works__col frontend js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                <div class="work__col-title">Frontend</div>
+              </div>
+                <div class="works__col frontend js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                    <i class="fas fa-link"></i>
+                  </a>
+                <div class="work__col-title">Frontend</div>
+              </div>
+                <div class="works__col backend js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                  </a>
+                <div class="work__col-title">Backend</div>
+              </div>
+                <div class="works__col backend js-work">
+                  <a class="work__col-img">
+                    <img src="./img/Placeholder-1.png" alt="">
+                  </a>
+                <div class="work__col-title">Backend</div>
+              </div>
+              </div>
             </div>
           </section>
         </div>
           <div id="contact" class="content__inner js-content ">
             <section class="content__block contact">
               <div class="content__title">
-                <h3>Контакты</h3>
+                <h3>Contact</h3>
+              </div>
+              <div class="contact__wrap">
+                <h4 class="contact__subtitle">Contact Form</h4>
+                <form class="contact__form form">
+                  <div class="form__wrap-input">
+                    <input type="text" placeholder="Full Name" class="form__input">
+                  </div>
+                  <div class="form__wrap-input">
+                    <input type="text" placeholder="Email Address" class="form__input">
+                  </div>
+                  <div class="form__wrap-input_text">
+                    <textarea class="form__input form__input_text" placeholder="Your Message"></textarea>
+                  </div>
+                  <button class="contact__form-submit">
+                    <span>Send Message</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </form>
               </div>
             </section>
           </div>
@@ -173,3 +258,4 @@
 <script src="js/script.min.js"></script>
 </body>
 </html>
+
