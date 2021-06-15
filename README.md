@@ -10,4 +10,4 @@
 * Верстка по "БЕМ" методологии.
 
 
-Проектр можно посмотреть по ссылке - [Здесь](https://alex-maskall.github.io/portfolio/dist/).
+Проектр можно посмотреть по ссылке - [ЗДЕСЬ](https://alex-maskall.github.io/portfolio/dist/).
